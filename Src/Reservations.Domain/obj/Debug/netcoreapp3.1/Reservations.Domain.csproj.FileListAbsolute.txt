@@ -1,0 +1,9 @@
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\bin\Debug\netcoreapp3.1\Reservations.Domain.deps.json
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\bin\Debug\netcoreapp3.1\Reservations.Domain.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\bin\Debug\netcoreapp3.1\Reservations.Domain.pdb
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.csprojAssemblyReference.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.AssemblyInfoInputs.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.AssemblyInfo.cs
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.csproj.CoreCompileInputs.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations.Domain\obj\Debug\netcoreapp3.1\Reservations.Domain.pdb

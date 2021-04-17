@@ -1,0 +1,12 @@
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\bin\Debug\net5.0\Reservations.Shared.deps.json
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\bin\Debug\net5.0\Reservations.Shared.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\bin\Debug\net5.0\ref\Reservations.Shared.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\bin\Debug\net5.0\Reservations.Shared.pdb
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.csprojAssemblyReference.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.AssemblyInfoInputs.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.AssemblyInfo.cs
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.csproj.CoreCompileInputs.cache
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\ref\Reservations.Shared.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Shared\obj\Debug\net5.0\Reservations.Shared.pdb
