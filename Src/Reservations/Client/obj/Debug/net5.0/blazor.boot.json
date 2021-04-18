@@ -200,7 +200,6 @@
     },
     "lazyAssembly": null,
     "pdb": {
-      "Reservations.Shared.pdb": "sha256-SYLqlmp1iJJOt0FYfTn97zHFVK9ppQkIKpKN9Ve25fc=",
       "Reservations.Client.pdb": "sha256-4ObJl7rmWxSZmgQAkRqKaFuAzkcikmZB+cy8N0JR\/48="
     },
     "runtime": {

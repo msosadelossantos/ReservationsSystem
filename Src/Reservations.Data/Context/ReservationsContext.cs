@@ -18,6 +18,8 @@ namespace Reservations.Data.Context
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
         public virtual DbSet<CountryState> CountryStates { get; set; }
+        public virtual DbSet<Operator> Operators { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
@@ -55,6 +57,8 @@ namespace Reservations.Data.Context
                    .WithMany(x => x.Specialists)
                    .HasForeignKey(e => e.AddressCountryId)
                    .HasConstraintName("FK_Specialist_Country");
+
+                
 
             });
 
@@ -165,7 +169,71 @@ namespace Reservations.Data.Context
                new CountryState { CountryStateId = IdGenerator.Generate(), Name = "Entre Rios", Description = "" }
 
                );
+            modelBuilder.Entity<Operator>(entity =>
+            {
 
+                entity.HasKey(e => e.OperatorId);
+                entity.Property(e => e.OperatorId).HasColumnName("operatorId").ValueGeneratedNever();
+                entity.Property(e => e.Name).HasColumnName("name").IsRequired();
+                entity.Property(e => e.Name2).HasColumnName("name2");
+                entity.Property(e => e.Surname).HasColumnName("surname").IsRequired();
+                entity.Property(e => e.Surname2).HasColumnName("surname2");
+                entity.Property(e => e.Document).HasColumnName("document").HasMaxLength(8).IsRequired();
+                entity.Property(e => e.TaxId).HasColumnName("taxId").HasMaxLength(11).IsRequired();
+                entity.Property(e => e.AddressStreet).HasColumnName("addressStreet").IsRequired();
+                entity.Property(e => e.AddressNumber).HasColumnName("addressNumber").IsRequired();
+                entity.Property(e => e.AddressLocality).HasColumnName("addressLocality").IsRequired();
+                entity.Property(e => e.AddressCP).HasColumnName("addressCP");
+                entity.Property(e => e.AddressCountryId).HasColumnName("addressCountryId").IsRequired();
+                entity.Property(e => e.BirthDate).HasColumnName("birthDate").HasColumnType("timestamp without time zone");
+                entity.Property(e => e.AddressCountryStateId).HasColumnName("addressCountryStateId").IsRequired();
+                entity.Property(e => e.BirthCountryId).HasColumnName("birthCountryId").IsRequired();
+
+
+                entity.HasOne(e => e.BirthCountry)
+                .WithMany(x => x.OperatorsNacionality)
+                .HasForeignKey(e => e.BirthCountryId)
+                .HasConstraintName("FK_Operators_CountryNacinality");
+
+                entity.HasOne(e => e.AddressCountryState)
+                 .WithMany(x => x.Operators)
+                 .HasForeignKey(e => e.AddressCountryStateId)
+                 .HasConstraintName("FK_Operators_CountryState");
+
+                entity.HasOne(e => e.AddressCountry)
+                   .WithMany(x => x.Operators)
+                   .HasForeignKey(e => e.AddressCountryId)
+                   .HasConstraintName("FK_Operators_Country");
+
+                
+            });
+
+
+            modelBuilder.Entity<User>(entity =>
+            {
+
+                entity.HasKey(e => e.UserId);
+                entity.Property(e => e.UserId).HasColumnName("userId").ValueGeneratedNever();
+                entity.Property(e => e.UserCode).HasColumnName("userCode").IsRequired();
+                entity.Property(e => e.PassWord).HasColumnName("passWord");
+
+                entity.HasOne(e => e.Client)
+                .WithOne(x => x.User)
+                .HasForeignKey<Client>(e => e.UserId)
+                .HasConstraintName("FK_Users_Client");
+
+                entity.HasOne(e => e.Operator)
+                .WithOne(x => x.User)
+                .HasForeignKey<Operator>(e => e.UserId)
+                .HasConstraintName("FK_Users_Operator");
+
+                entity.HasOne(e => e.Specialist)
+                .WithOne(x => x.User)
+                .HasForeignKey<Specialist>(e => e.UserId)
+                .HasConstraintName("FK_Users_Specialist");
+
+
+            });
 
             OnModelCreatingPartial(modelBuilder);
         }

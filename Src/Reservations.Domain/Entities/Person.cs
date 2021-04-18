@@ -24,6 +24,8 @@ namespace Reservations.Domain.Entities
         public virtual Country AddressCountry { get; set; }
         public string BirthCountryId { get; set; }
         public virtual Country BirthCountry { get; set; }
+        public string UserId { get; set; }
+        public virtual User User { get; set; }
 
     }
 }
