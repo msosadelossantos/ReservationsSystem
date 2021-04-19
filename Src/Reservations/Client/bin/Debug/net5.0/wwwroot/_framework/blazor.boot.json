@@ -7,12 +7,14 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Microsoft.AspNetCore.Authorization.dll": "sha256-GgCkcCalx\/3h2tzZqbfi\/H5H4zwf+gA7wOIJWVGaW3Y=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-tjgurODETDIWCTj+df3XjjWnMRi72XZXE78H5YaTpDc=",
+      "Microsoft.AspNetCore.Authorization.dll": "sha256-fRsos6COcWE1mv16iL1oDlrTVo0CyzWlANOV3GVPteM=",
+      "Microsoft.AspNetCore.Blazor.HttpClient.dll": "sha256-1xfOnnlZZg19s2R3vH\/UX9m3dprauIFLdeaYzgmiwc0=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-fRGuHi4QM9T4jlY+wZqfSulM4Eok2jLzIYGAet4sIok=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-+cO\/BSr\/e6aZ2ZcUtC0L5Ca3s9EMHGxj09HcTtAmUrE=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-zrn\/FnIALTHMExILtqdkxOH1pM1etFsHZKdup5iX8tU=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-grRzaeXO\/Dfsteh5jEm\/m7g4YCXi8+fFZ2v1BNIMeQA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-grJppr5rXiGmkAtdiCR04Z7NXclvICBPwE6aHeOvMEQ=",
-      "Microsoft.AspNetCore.Metadata.dll": "sha256-ggV83y6tiNFycAgetcOWTss\/XnO8cK2ya4q+tOda4q4=",
+      "Microsoft.AspNetCore.Metadata.dll": "sha256-jB89nHfDKh5Qw5L3QYLKim3zIRZlFEPTtlMHt4hnYME=",
       "Microsoft.Extensions.Configuration.dll": "sha256-x9zYR1t1is\/fStNpBiQnXyPdMpLLcQcra3w4RXGSg4o=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-NYecKM0ZpUvzj4spvgi6xUu80rkx8PX7fiRok\/BNaHw=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-JFLIykah3r5WjvztBuVIaMM9wfVswDM+On6k\/QVgeeg=",
@@ -195,13 +197,13 @@
       "mscorlib.dll": "sha256-Fi+LybwHL\/VGD\/09OxxtYlT6exn9xVU+LdojZ9juR2c=",
       "netstandard.dll": "sha256-P8xX0ad1hKyWWbBxiXl3cYokFlDiuXwp3pqoYatH0kk=",
       "System.Private.CoreLib.dll": "sha256-2km83sNUTrumGJYdDzsN8RnJqv00vKWLCCh0UGajTB4=",
-      "Reservations.Shared.dll": "sha256-pHM3+xIvbpwJukYiD7mvxF5n691Y5LN96+rOXQKWoOU=",
-      "Reservations.Client.dll": "sha256-+3mv5B4GrKVpn7j3uZPkKeBqWG8m5zPMuQGFN\/K0ZCU="
+      "Reservations.Shared.dll": "sha256-Kbq3J10lcVgNS+qN0l3JP9Ncv+xycGMjNVpjPXUmoBo=",
+      "Reservations.Client.dll": "sha256-TbjjuXdZQTFQM1uu\/HzfN7zfH7YDmtDZRBNj6NvmJ3Y="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Reservations.Shared.pdb": "sha256-SYLqlmp1iJJOt0FYfTn97zHFVK9ppQkIKpKN9Ve25fc=",
-      "Reservations.Client.pdb": "sha256-4ObJl7rmWxSZmgQAkRqKaFuAzkcikmZB+cy8N0JR\/48="
+      "Reservations.Shared.pdb": "sha256-Ru3fBAWU61PzgTj0ApC6oUsb9+gDZo5kE9\/07NkHctg=",
+      "Reservations.Client.pdb": "sha256-asUAYw2aL8oS0mfoSBdqW6oWP4Y36nGFzjQtzjWz9Rc="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ibxaSjW7s3aLVssChknhzCpgMTHGu4D48Q9OLP3dfe8=",

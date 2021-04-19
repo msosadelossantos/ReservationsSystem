@@ -1,0 +1,16 @@
+﻿
+@page "/logout"
+@inject ILoginService loginService
+@inject NavigationManager navigationManager
+@using Reservations.Client.Auth
+
+<text>Logout...</text>
+
+@code {
+    protected async override Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        await loginService.Logout();
+        navigationManager.NavigateTo("");
+    }
+}

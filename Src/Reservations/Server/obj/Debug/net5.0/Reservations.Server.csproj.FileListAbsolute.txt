@@ -91,3 +91,12 @@ C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug
 C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Reservations.Domain.dll
 C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Reservations.Data.pdb
 C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Reservations.Domain.pdb
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll

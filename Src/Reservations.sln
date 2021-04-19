@@ -21,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Data", "5-Data", "{50D0EC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Cross", "6-Cross", "{2E092691-A0D3-4EA8-8D6E-3EB66EB011ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservations.Aplication", "Reservations.Aplication\Reservations.Aplication.csproj", "{368CCCDF-8B72-40F6-9884-F020DCCCB86C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservations.Aplication", "Reservations.Aplication\Reservations.Aplication.csproj", "{368CCCDF-8B72-40F6-9884-F020DCCCB86C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservations.Domain", "Reservations.Domain\Reservations.Domain.csproj", "{4E0A3A6E-A535-4BDE-9D7D-98BC1F5E1660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservations.Domain", "Reservations.Domain\Reservations.Domain.csproj", "{4E0A3A6E-A535-4BDE-9D7D-98BC1F5E1660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservations.Data", "Reservations.Data\Reservations.Data.csproj", "{39F89C5C-5A8D-4C9A-A564-FB9A8220D5DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservations.Data", "Reservations.Data\Reservations.Data.csproj", "{39F89C5C-5A8D-4C9A-A564-FB9A8220D5DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

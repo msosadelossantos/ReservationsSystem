@@ -1,0 +1,45 @@
+﻿@layout LoginLayout
+@page "/"
+<h3>Login</h3>
+@inject HttpClient http
+@inject NavigationManager uriHelper
+@inject ILoginService loginService
+@using Reservations.Client.Auth
+@using Reservations.Shared.Models
+
+
+<EditForm Model="userInfo" OnValidSubmit="LoginUser">
+    <DataAnnotationsValidator />
+
+    <div class="form-field">
+        <label>Name:</label>
+        <div>
+            <InputText Class="form-control" @bind-Value="@userInfo.UserCode" />
+            <ValidationMessage For="@(() => userInfo.UserCode)" />
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Password:</label>
+        <div>
+            <InputPassword Class="form-control" @bind-Value="@userInfo.Password" />
+            <ValidationMessage For="@(() => userInfo.Password)" />
+        </div>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Login</button>
+    
+
+</EditForm>
+<a href="Register" class="nav-link btn btn-link">Registera new account</a>
+
+@code {
+    private UserInfo userInfo = new UserInfo();
+
+    private async Task LoginUser()
+    {
+        var result = await http.PostJsonAsync<UserToken>("api/auth/login", userInfo);
+        await loginService.Login(result.Token);
+        uriHelper.NavigateTo("index");
+    }
+
+}

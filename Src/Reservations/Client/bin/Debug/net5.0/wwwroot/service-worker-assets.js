@@ -1,16 +1,24 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-lSNQIUHs8J4\/KDg9GsPDpWhLc4ETLeHe91lT6Jvx+ow=",
+      "hash": "sha256-a020jpqLuUthph07uvjp8Pagyqxl4YqKlTriy4aOqp4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-GgCkcCalx\/3h2tzZqbfi\/H5H4zwf+gA7wOIJWVGaW3Y=",
+      "hash": "sha256-fRsos6COcWE1mv16iL1oDlrTVo0CyzWlANOV3GVPteM=",
       "url": "_framework\/Microsoft.AspNetCore.Authorization.dll"
     },
     {
-      "hash": "sha256-tjgurODETDIWCTj+df3XjjWnMRi72XZXE78H5YaTpDc=",
+      "hash": "sha256-1xfOnnlZZg19s2R3vH\/UX9m3dprauIFLdeaYzgmiwc0=",
+      "url": "_framework\/Microsoft.AspNetCore.Blazor.HttpClient.dll"
+    },
+    {
+      "hash": "sha256-fRGuHi4QM9T4jlY+wZqfSulM4Eok2jLzIYGAet4sIok=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
+    },
+    {
+      "hash": "sha256-+cO\/BSr\/e6aZ2ZcUtC0L5Ca3s9EMHGxj09HcTtAmUrE=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "hash": "sha256-zrn\/FnIALTHMExILtqdkxOH1pM1etFsHZKdup5iX8tU=",
@@ -25,7 +33,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
-      "hash": "sha256-ggV83y6tiNFycAgetcOWTss\/XnO8cK2ya4q+tOda4q4=",
+      "hash": "sha256-jB89nHfDKh5Qw5L3QYLKim3zIRZlFEPTtlMHt4hnYME=",
       "url": "_framework\/Microsoft.AspNetCore.Metadata.dll"
     },
     {
@@ -785,19 +793,19 @@
       "url": "_framework\/dotnet.5.0.4.js"
     },
     {
-      "hash": "sha256-pHM3+xIvbpwJukYiD7mvxF5n691Y5LN96+rOXQKWoOU=",
+      "hash": "sha256-Kbq3J10lcVgNS+qN0l3JP9Ncv+xycGMjNVpjPXUmoBo=",
       "url": "_framework\/Reservations.Shared.dll"
     },
     {
-      "hash": "sha256-SYLqlmp1iJJOt0FYfTn97zHFVK9ppQkIKpKN9Ve25fc=",
+      "hash": "sha256-Ru3fBAWU61PzgTj0ApC6oUsb9+gDZo5kE9\/07NkHctg=",
       "url": "_framework\/Reservations.Shared.pdb"
     },
     {
-      "hash": "sha256-+3mv5B4GrKVpn7j3uZPkKeBqWG8m5zPMuQGFN\/K0ZCU=",
+      "hash": "sha256-TbjjuXdZQTFQM1uu\/HzfN7zfH7YDmtDZRBNj6NvmJ3Y=",
       "url": "_framework\/Reservations.Client.dll"
     },
     {
-      "hash": "sha256-4ObJl7rmWxSZmgQAkRqKaFuAzkcikmZB+cy8N0JR\/48=",
+      "hash": "sha256-asUAYw2aL8oS0mfoSBdqW6oWP4Y36nGFzjQtzjWz9Rc=",
       "url": "_framework\/Reservations.Client.pdb"
     },
     {
@@ -805,12 +813,20 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-pUqA9+sGF7EX3mqxHnpPIhis79PtkkPA2a0Kj6ICgi4=",
+      "hash": "sha256-nfg4\/jw37z0EXjrvqx4kSbneKT9nWYy3Sqe0lctEdic=",
       "url": "_framework\/Microsoft.AspNetCore.Authorization.dll.gz"
     },
     {
-      "hash": "sha256-15aJxP7qn2fPZ5+jYl0n8UKBreUQKzcWKeXIsr5Di1g=",
+      "hash": "sha256-BnmW1Hi\/8wp4KttiXXVVBNBIrUTFXWj6dpZmQoYjibA=",
+      "url": "_framework\/Microsoft.AspNetCore.Blazor.HttpClient.dll.gz"
+    },
+    {
+      "hash": "sha256-Yyc45q+aeLoMfRT4t56g2ktw8amXUaNyxYTAwmsaO6o=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll.gz"
+    },
+    {
+      "hash": "sha256-7tBSpTPuDJoqV1iMUhfTIJcph98xep51YMlCdKsFRvc=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Authorization.dll.gz"
     },
     {
       "hash": "sha256-wHHxz6CZSif4NDUubayuw2OOGKDxx9QFxzxfxzsAJic=",
@@ -825,7 +841,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
     },
     {
-      "hash": "sha256-ASkVMgWDr3sE2U+xEI4hfAfXwvXRTvqnt3YhXd\/g7F8=",
+      "hash": "sha256-rFPOEdKUyB3yaRUsYFVfKAXcFMuvkbNU8jZX9KIKYJA=",
       "url": "_framework\/Microsoft.AspNetCore.Metadata.dll.gz"
     },
     {
@@ -1585,7 +1601,7 @@
       "url": "_framework\/dotnet.5.0.4.js.gz"
     },
     {
-      "hash": "sha256-PI8LKOORBcgpJIq4oKwc\/nCoFAEFDlNTWRlz+z7luf4=",
+      "hash": "sha256-ifyLcu1WRLaCUNm8APf79qVEnGGvHzquzzpC2zHth1A=",
       "url": "_framework\/Reservations.Shared.dll.gz"
     },
     {
@@ -1661,5 +1677,5 @@
       "url": "Reservations.Client.bundle.scp.css"
     }
   ],
-  "version": "lKFjZfPt"
+  "version": "uycuk3Za"
 };
