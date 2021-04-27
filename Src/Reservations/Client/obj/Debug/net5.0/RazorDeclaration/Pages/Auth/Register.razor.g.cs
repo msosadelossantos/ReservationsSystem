@@ -96,6 +96,13 @@ using Reservations.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Register.razor"
+using Reservations.Shared.Generic;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/register")]
     public partial class Register : Microsoft.AspNetCore.Components.ComponentBase
@@ -106,14 +113,14 @@ using Reservations.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Register.razor"
+#line 35 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Register.razor"
        
-    private UserInfo userInfo = new UserInfo();
+    private RegisterDto reg = new RegisterDto();
 
-    private async Task CreateUser()
+    private async Task signup()
     {
-        var result = await http.PostJsonAsync<UserToken>("api/auth/createUser", userInfo);
-        await loginService.Login(result.Token);
+        var result = await http.PostJsonAsync<ApiResult<UserDto>>("api/auth/signup", reg);
+        //await loginService.Login(result.Payload.Token);
         uriHelper.NavigateTo("index");
     }
 

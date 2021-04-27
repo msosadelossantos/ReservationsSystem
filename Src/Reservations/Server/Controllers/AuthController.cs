@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Reservations.Aplication.Auth;
+using Reservations.Shared.Generic;
 using Reservations.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -18,48 +20,73 @@ namespace Reservations.Server.Controllers
     {
         
         private readonly IConfiguration _configuration;
+        private readonly IAuthService _authService;
+
 
         public AuthController(
-           
+           IAuthService authService,
             IConfiguration configuration)
         {
-            
+            _authService = authService;
             _configuration = configuration;
         }
 
-        [HttpPost("createUser")]
-        public async Task<ActionResult<UserToken>> CreateUser([FromBody] UserInfo model)
+        [HttpPost("signup")]
+        public async Task<ActionResult<ApiResult<UserDto>>> SignUpAsync([FromBody] RegisterDto model)
         {
-          /*  var user = new IdentityUser { UserName = model.Email, Email = model.Email };
-            var result = await _userManager.CreateAsync(user, model.Password);
-            if (result.Succeeded)
+            var result = await _authService.SignUp(model);
+
+            if (result.Success)
             {
-                return BuildToken(model);
+               
+                return new ApiResult<UserDto>()
+                {
+                    Success = true,
+                    Payload = result.Payload.User
+                };
             }
             else
             {
-                return BadRequest("Username or password invalid");
-            }*/
-            return BuildToken(model);
+                return new ApiResult<UserDto>()
+                {
+                    Success = false,
+                    Messages = new MessageStruct[] { new MessageStruct("1", "Error: Something went wrong.") },
+                    Payload = null
+                };
+            }
+
+
 
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<UserToken>> Login([FromBody] UserInfo userInfo)
+        public async Task<ActionResult<ApiResult<UserToken>>> LoginAsync([FromBody] UserDto userInfo)
         {
-            /*var result = await _signInManager.PasswordSignInAsync(userInfo.Email, userInfo.Password, isPersistent: false, lockoutOnFailure: false);
-            if (result.Succeeded)
+            var result = await _authService.Login(userInfo);
+
+            if (result.Success)
             {
+                var token = BuildToken(userInfo);
+                return new ApiResult<UserToken>()
+                {
+                    Success = true,
+                    Payload = token
+                };
+
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                return BadRequest(ModelState);
-            }*/
-                return BuildToken(userInfo);
+                return new ApiResult<UserToken>()
+                {
+                    Success = false,
+                    Messages = new MessageStruct[] { new MessageStruct("1", "Error: Username or password is incorrect.")},
+                    Payload = null
+                };
+            }
+
         }
 
-        private UserToken BuildToken(UserInfo userInfo)
+        private UserToken BuildToken(UserDto userInfo)
         {
             var claims = new[]
             {

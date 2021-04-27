@@ -197,13 +197,13 @@
       "mscorlib.dll": "sha256-Fi+LybwHL\/VGD\/09OxxtYlT6exn9xVU+LdojZ9juR2c=",
       "netstandard.dll": "sha256-P8xX0ad1hKyWWbBxiXl3cYokFlDiuXwp3pqoYatH0kk=",
       "System.Private.CoreLib.dll": "sha256-2km83sNUTrumGJYdDzsN8RnJqv00vKWLCCh0UGajTB4=",
-      "Reservations.Shared.dll": "sha256-Kbq3J10lcVgNS+qN0l3JP9Ncv+xycGMjNVpjPXUmoBo=",
-      "Reservations.Client.dll": "sha256-TbjjuXdZQTFQM1uu\/HzfN7zfH7YDmtDZRBNj6NvmJ3Y="
+      "Reservations.Shared.dll": "sha256-hd2Sz17NgCJHM1WWVE1NYUbXHl9CApgkymVA2hSoZMM=",
+      "Reservations.Client.dll": "sha256-Yd3+HL5SIw9WeMqFvUbp\/xUr4Y\/IbpF69XZS5HXHNI8="
     },
     "lazyAssembly": null,
     "pdb": {
-      "Reservations.Shared.pdb": "sha256-Ru3fBAWU61PzgTj0ApC6oUsb9+gDZo5kE9\/07NkHctg=",
-      "Reservations.Client.pdb": "sha256-asUAYw2aL8oS0mfoSBdqW6oWP4Y36nGFzjQtzjWz9Rc="
+      "Reservations.Shared.pdb": "sha256-HTX250ZLRTBRXRuXWyrgeb3+VDdHjcDKI9QrGIPkmd0=",
+      "Reservations.Client.pdb": "sha256-iVzQIico9+tTE0YALOOUO0W4wSYS5FGMY3bHiezEvHY="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ibxaSjW7s3aLVssChknhzCpgMTHGu4D48Q9OLP3dfe8=",

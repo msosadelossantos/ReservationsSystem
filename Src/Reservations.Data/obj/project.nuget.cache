@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6gTLktXjRd64C7aAbRxi1zb8FslMQTiVY1xSLKxbUTrM7cuIMmkHWitaM03gQvaP3b30UT8j7CVvsewgfQzZOg==",
+  "dgSpecHash": "1DMk127ODf2O0hr0/5r0+E+D4gRY0hFbliI+64Zb2Y5ArSKrqaeZCs7KgGz1km8K338/hyuk2iZtGMgq9Y3iLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\msosa\\source\\repos\\ReservationsSystem\\Src\\Reservations.Data\\Reservations.Data.csproj",
   "expectedPackageFiles": [
@@ -36,9 +36,7 @@
     "C:\\Users\\msosa\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\msosa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\msosa\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\msosa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
-    "C:\\Users\\msosa\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
-    "C:\\Users\\msosa\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+    "C:\\Users\\msosa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

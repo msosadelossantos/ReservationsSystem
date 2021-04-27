@@ -96,6 +96,13 @@ using Reservations.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Login.razor"
+using Reservations.Shared.Generic;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
@@ -106,14 +113,14 @@ using Reservations.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Login.razor"
+#line 36 "C:\Users\msosa\source\repos\ReservationsSystem\Src\Reservations\Client\Pages\Auth\Login.razor"
        
-    private UserInfo userInfo = new UserInfo();
+    private UserDto uservm = new UserDto();
 
     private async Task LoginUser()
     {
-        var result = await http.PostJsonAsync<UserToken>("api/auth/login", userInfo);
-        await loginService.Login(result.Token);
+        var result = await http.PostJsonAsync<ApiResult<UserToken>>("api/auth/login", uservm);
+        await loginService.Login(result.Payload.Token);
         uriHelper.NavigateTo("index");
     }
 

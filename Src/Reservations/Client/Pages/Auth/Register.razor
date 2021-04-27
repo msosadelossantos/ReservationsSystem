@@ -6,24 +6,25 @@
 @inject ILoginService loginService
 @using Reservations.Client.Auth
 @using Reservations.Shared.Models
+@using Reservations.Shared.Generic
 
 
 
-<EditForm Model="userInfo" OnValidSubmit="CreateUser">
+<EditForm Model="reg" OnValidSubmit="signup">
     <DataAnnotationsValidator />
 
     <div class="form-field">
         <label>Name:</label>
         <div>
-            <InputText Class="form-control" @bind-Value="@userInfo.UserCode" />
-            <ValidationMessage For="@(() => userInfo.UserCode)" />
+            <InputText Class="form-control" @bind-Value="@reg.User.UserCode" />
+            <ValidationMessage For="@(() => reg.User.UserCode)" />
         </div>
     </div>
     <div class="form-field">
         <label>Password:</label>
         <div>
-            <InputPassword Class="form-control" @bind-Value="@userInfo.Password" />
-            <ValidationMessage For="@(() => userInfo.Password)" />
+            <InputPassword Class="form-control" @bind-Value="@reg.User.PassWord" />
+            <ValidationMessage For="@(() => reg.User.PassWord)" />
         </div>
     </div>
 
@@ -32,12 +33,12 @@
 </EditForm>
 
 @code {
-    private UserInfo userInfo = new UserInfo();
+    private RegisterDto reg = new RegisterDto();
 
-    private async Task CreateUser()
+    private async Task signup()
     {
-        var result = await http.PostJsonAsync<UserToken>("api/auth/createUser", userInfo);
-        await loginService.Login(result.Token);
+        var result = await http.PostJsonAsync<ApiResult<UserDto>>("api/auth/signup", reg);
+        //await loginService.Login(result.Payload.Token);
         uriHelper.NavigateTo("index");
     }
 

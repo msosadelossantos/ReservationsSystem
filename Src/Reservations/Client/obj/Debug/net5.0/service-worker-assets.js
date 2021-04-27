@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-a020jpqLuUthph07uvjp8Pagyqxl4YqKlTriy4aOqp4=",
+      "hash": "sha256-3sYjYNRIPDO+e+tZOPUjf00YkVko89JX+2lRxZm1U+Y=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,19 +793,19 @@
       "url": "_framework\/dotnet.5.0.4.js"
     },
     {
-      "hash": "sha256-Kbq3J10lcVgNS+qN0l3JP9Ncv+xycGMjNVpjPXUmoBo=",
+      "hash": "sha256-hd2Sz17NgCJHM1WWVE1NYUbXHl9CApgkymVA2hSoZMM=",
       "url": "_framework\/Reservations.Shared.dll"
     },
     {
-      "hash": "sha256-Ru3fBAWU61PzgTj0ApC6oUsb9+gDZo5kE9\/07NkHctg=",
+      "hash": "sha256-HTX250ZLRTBRXRuXWyrgeb3+VDdHjcDKI9QrGIPkmd0=",
       "url": "_framework\/Reservations.Shared.pdb"
     },
     {
-      "hash": "sha256-TbjjuXdZQTFQM1uu\/HzfN7zfH7YDmtDZRBNj6NvmJ3Y=",
+      "hash": "sha256-Yd3+HL5SIw9WeMqFvUbp\/xUr4Y\/IbpF69XZS5HXHNI8=",
       "url": "_framework\/Reservations.Client.dll"
     },
     {
-      "hash": "sha256-asUAYw2aL8oS0mfoSBdqW6oWP4Y36nGFzjQtzjWz9Rc=",
+      "hash": "sha256-iVzQIico9+tTE0YALOOUO0W4wSYS5FGMY3bHiezEvHY=",
       "url": "_framework\/Reservations.Client.pdb"
     },
     {
@@ -1601,7 +1601,7 @@
       "url": "_framework\/dotnet.5.0.4.js.gz"
     },
     {
-      "hash": "sha256-ifyLcu1WRLaCUNm8APf79qVEnGGvHzquzzpC2zHth1A=",
+      "hash": "sha256-h\/AKavdC9J0xTgc2XPLX7LjkPLTMfwVDy\/lCA9EcqAM=",
       "url": "_framework\/Reservations.Shared.dll.gz"
     },
     {
@@ -1677,5 +1677,5 @@
       "url": "Reservations.Client.bundle.scp.css"
     }
   ],
-  "version": "uycuk3Za"
+  "version": "4lZSaf7J"
 };

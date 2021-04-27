@@ -8,10 +8,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Reservations.Aplication.Auth;
 using Reservations.Data.Context;
 using System;
 using System.Linq;
 using System.Text;
+using AutoMapper;
+using Reservations.Aplication.Mapper;
 
 namespace Reservations.Server
 {
@@ -33,7 +36,7 @@ namespace Reservations.Server
             services.AddRazorPages();
             services.AddDbContext<ReservationsContext>(options =>
            options.UseNpgsql(Configuration.GetConnectionString("ReservationsConnection")));
-
+            
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
@@ -47,6 +50,8 @@ namespace Reservations.Server
                    Encoding.UTF8.GetBytes(Configuration["jwt:key"])),
                     ClockSkew = TimeSpan.Zero
                 });
+            services.AddAutoMapper(typeof(Mapping));
+            services.AddScoped<IAuthService, AuthService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
